@@ -19,7 +19,7 @@ const Goals = () => {
   const handleAddGoal = (e) => {
     e.preventDefault()
     const goal = {
-      id: goals.length + 1,
+      id: Date.now(),
       ...newGoal,
       target: parseInt(newGoal.target),
       progress: 0,

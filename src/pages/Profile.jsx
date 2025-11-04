@@ -93,7 +93,7 @@ const Profile = () => {
                 type="number"
                 disabled={!isEditing}
                 value={profile.age}
-                onChange={(e) => setProfile({ ...profile, age: parseInt(e.target.value) })}
+                onChange={(e) => setProfile({ ...profile, age: parseInt(e.target.value, 10) || 0 })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
               />
             </div>

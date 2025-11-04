@@ -22,7 +22,7 @@ const Workouts = () => {
   const handleAddWorkout = (e) => {
     e.preventDefault()
     const workout = {
-      id: workouts.length + 1,
+      id: Date.now(),
       ...newWorkout,
       duration: parseInt(newWorkout.duration),
       calories: parseInt(newWorkout.calories),
